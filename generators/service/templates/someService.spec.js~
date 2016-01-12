@@ -1,0 +1,14 @@
+'use strict';
+
+describe('Service: Service (it\'s just called service)', function () {
+
+    // load the directive's module and view
+    beforeEach(module('tmsApp'));
+
+    
+    it('should do stuff that we want', inject(function (service) {
+	spyOn(service, 'method').and.callThrough()
+	expect(service.method('whom')).toEqual('whomever');
+	expect(service.method).toHaveBeenCalled();
+    }));
+});

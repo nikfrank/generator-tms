@@ -1,0 +1,53 @@
+{
+  "name": "generator-tms",
+  "version": "0.0.0",
+  "description": "generate assets within the tms diy ui app environs",
+  "homepage": "tms-egn-repo--fill-in-later",
+  "author": {
+    "name": "nik frank per thomson reuters",
+    "email": "Nik.Frank@thomsonreuters.com",
+    "url": "nikfrank.com"
+  },
+  "files": [
+    "generators/directive"
+  ],
+  "main": "generators/directive/index.js",
+  "keywords": [
+    "yeoman-generator",
+    "es6"
+  ],
+  "dependencies": {
+    "yeoman-generator": "^0.21.1",
+    "chalk": "^1.0.0",
+    "yosay": "^1.0.2"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.3.13",
+    "eslint-config-xo-space": "^0.7.0",
+    "gulp": "^3.9.0",
+    "gulp-eslint": "^1.0.0",
+    "gulp-exclude-gitignore": "^1.0.0",
+    "gulp-istanbul": "^0.10.3",
+    "gulp-mocha": "^2.0.0",
+    "gulp-nsp": "^2.1.0",
+    "gulp-plumber": "^1.0.0",
+    "jasmine-core": "^2.4.1",
+    "karma": "^0.13.19",
+    "karma-babel-preprocessor": "^6.0.1",
+    "karma-chrome-launcher": "^0.2.2",
+    "karma-jasmine": "^0.3.6",
+    "karma-ng-html2js-preprocessor": "^0.2.0",
+    "yeoman-assert": "^2.0.0"
+  },
+  "eslintConfig": {
+    "extends": "xo-space",
+    "env": {
+      "mocha": true
+    }
+  },
+  "repository": "/generator-tms",
+  "scripts": {
+    "prepublish": "gulp prepublish",
+    "test": "gulp"
+  }
+}
